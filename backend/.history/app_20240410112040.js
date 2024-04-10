@@ -18,7 +18,7 @@ const blogRoute = require("./routes/blogRoutes");
 
 
 //database connection
-mongoose.connect(process.env.DATABASE
+mongoose.connect(process.env.DATABASE,
     // useNewUrlParser: true,
     // useCreateIndex: true,   
     // useUnifiedTopology: true,

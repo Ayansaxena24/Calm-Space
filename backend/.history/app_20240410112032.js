@@ -18,12 +18,12 @@ const blogRoute = require("./routes/blogRoutes");
 
 
 //database connection
-mongoose.connect(process.env.DATABASE
+mongoose.connect(process.env.DATABASE, {
     // useNewUrlParser: true,
     // useCreateIndex: true,   
     // useUnifiedTopology: true,
     // useFindAndModify: false
-).then(() => console.log("DB Connected"))
+}).then(() => console.log("DB Connected"))
 .catch(err => console.log("DB Connection Error: ", err));
 
 //Middleware 
